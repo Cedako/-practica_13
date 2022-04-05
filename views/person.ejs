@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <%# SE DETECTA SI LA ID ES DIVIDIBLE ENTRE 2%>
+    <% if (ID%2 == 0) { %>
+        <%# EN CASO DE SERLO, SE IMPRIMIRA UN MENSAJE TANTAS VECES COMO EL DOBLE DEL VALOR DEL ID INGRESADO %>
+        <% for (let i=0;i<(ID*2);i++) { %>
+            <h1>ES PAR</h1>
+        <% }} else { %>
+            <%# EN CASO DE NO SER DIVIDIBLE ENTRE 2, SE IMPRIMIRA OTRO MENSAJE TANTAS VECES COMO EL VALOR DEL ID INGRESADO %>
+            <% for (let i=0;i<(ID);i++) { %>
+                <h1>ES IMPAR</h1>
+            <% }} %>
+</body>
+</html>
+<% /* %> DOCUMENTACION PERSONAL
+ LAS LLAVES USADAS PARA EL FOR Y EL IF CORREN CODIGO NORMAL PERO CIERRAN DONDE EMPIEZA
+ EL "{" Y VUELVEN A ABRIRSE PARA CERRAR LA OTRA LLAVE "}".
+ LO QUE QUEDE DENTRO DE LAS MISMAS SEGUIRA LAS INSTRUCCIONES DE LA FUNCION.
+ EN RESUMEN: SE UTILIZARAN LAS LLAVES "<% %>" TANTO EN EL INICIO COMO
+ EN EL FINAL DE LAS FUNCIONES. 
+ <% */ %>
